@@ -11,6 +11,9 @@ Fiktivní splečnost **Cyclistic** provozuje v Chicagu bike-share program s při
 Finanční analýza společnosti ukázala, že zákazníci s **ročním členstvím** jsou pro společnost z hlediska profitu mnohem zajímavější.
 
 ### Klíčový úkol (business task)
-* ,,Jak se liší chování zákazníku s ročním členstvím od zákazníku s jednorázovým/celodenním jízdným?''
+* ,,Jak se liší chování zákazníků s ročním členstvím od zákazníku s jednorázovým/celodenním jízdným?''
 
 Cílem této analýzy je tedy identifikovat rozdíly v chování těchto zákazníků a poskytnout marketingovému týmu podklady pro tvorbu cílených kampaní.
+
+## 2. FÁZE: PREPARE
+
