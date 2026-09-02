@@ -32,5 +32,5 @@ Pro tuto analýzu byla stažena a připravena historická data o jízdách fikti
 * Celkový objem dat představuje 12 měsíčních souborů, přibližně 28 MB v zazipovaném stavu (jeden soubor)  a celkově zhruba 6 milionu řádků záznamů o jízdách. 
 ## 3. FÁZE: PROCESS
 ### Výběr nástroje
-Jakožto pracovní nástroj na zpracování takto rozsáhlého datového souboru jsme zvolili SQL, konkrétně BigQuery. Volba byla hlavně z důvodu efektivnější práce s takovým množstvím řádku, klasický tabulkový procesor by byl značně neefektivní.
+Jakožto pracovní nástroj na zpracování takto rozsáhlého datového souboru jsme zvolili SQL, konkrétně BigQuery. Takovouto volbu jsme provedli hlavně z důvodu efektivnější práce s velkým množstvím řádků, klasický tabulkový procesor by byl značně neefektivní.
 
