@@ -29,7 +29,8 @@ Pro tuto analýzu byla stažena a připravena historická data o jízdách fikti
 * **Citovaná**: Víme, kdo daný datový soubor vydal a pod jakou byl vydán licencí (viz výše).
 
 ### Rozsah datového souboru
-* Celkový objem dat představuje 12 měsíčních souborů, přibližně 28 MB v zazipovaném stavu (jeden soubor)  a celkově zhruba 6 milionu řádků záznamů o jízdách. 
+* Celkový objem dat představuje 12 měsíčních souborů, přibližně 28 MB v zazipovaném stavu (jeden soubor)  a celkově zhruba 6 milionu řádků záznamů o jízdách.
+
 ## 3. FÁZE: PROCESS
 ### Výběr nástroje
 Jakožto pracovní nástroj na zpracování takto rozsáhlého datového souboru jsme zvolili SQL, konkrétně BigQuery. Takovouto volbu jsme provedli hlavně z důvodu efektivnější práce s velkým množstvím řádků, klasický tabulkový procesor by byl značně neefektivní.
@@ -64,3 +65,15 @@ Před samotnou tvorbou nové vyčištěné tabulky jsme provedli analýzu integr
 | **Testovací stanice** | 1 | **0** | Odfiltrováno |
 
 Celková integrita datového souboru byla zachována z **99,23 %**.
+
+## 4. FÁZE: ANALYSE
+V této fázi jsme provedli analýzu dat nad vyčištěnou tabulkou `cyclistic_cleaned` v prostředí Google BigQuery. Cílem této analýzy bylo odpovědět na hlavní otázku, položenou v úvodní části: **V čem přesně se liší chování ročních členů (`member`) a jednorázových uživatelů (`casual`)?**
+
+Kompletní analytické dotazy a metriky jsou zdokumentovány ve skriptu `sql/02_exploratory_analysis.sql`.
+
+### Celkový objem výpůjček a doba jejich trvání
+Základní provedená statistika odhalila výrazný nepoměr mezi počtem realizovaných jízd a dobou strávenou na kole:
+| Uživatelský segment | Počet jízd (`total_trips`) | Podíl na trhu (`%`) | Průměrná délka (`avg_min`) | Medián délky (`median_min`) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Casual** | 2 069 377 | 35,23 % | **18,92 min** | **11,47 min** |
+| **Member** | 3 805 281 | **64,77 %** | 12,25 min | 8,73 min |
