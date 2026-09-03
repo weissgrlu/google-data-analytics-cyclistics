@@ -71,9 +71,26 @@ V této fázi jsme provedli analýzu dat nad vyčištěnou tabulkou `cyclistic_c
 
 Kompletní analytické dotazy a metriky jsou zdokumentovány ve skriptu `sql/02_exploratory_analysis.sql`.
 
-### Celkový objem výpůjček a doba jejich trvání
+### 1. Celkový objem výpůjček a doba jejich trvání
 Základní provedená statistika odhalila výrazný nepoměr mezi počtem realizovaných jízd a dobou strávenou na kole:
 | Uživatelský segment | Počet jízd (`total_trips`) | Podíl na trhu (`%`) | Průměrná délka (`avg_min`) | Medián délky (`median_min`) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Casual** | 2 069 377 | 35,23 % | **18,92 min** | **11,47 min** |
 | **Member** | 3 805 281 | **64,77 %** | 12,25 min | 8,73 min |
+
+* **Klíčové zjištění:** Předplatitelé (members) tvoří stabilní část provozu (téměř dvě třetiny všech výpůjček). Nicméně jízdy rekreačních `casual` jezdců jsou v průměru o **54 % delší**. 
+
+### 2. Týdenní přehled: Dojíždění vs. rekreace 
+Statistika, kterou jsme provedli, odhalila zřejmě zásadně odlišnou motivaci pro používání sítě výpůjčky kol.
+| Den v týdnu | Počet jízd (Casual) | Podíl týdne (Casual) | Počet jízd (Member) | Podíl týdne (Member) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Pondělí** | 235 233 | 11,37 % | 527 644 | 13,87 % |
+| **Úterý** | 229 875 | 11,11 % | 601 753 | 15,81 % |
+| **Středa** | 237 508 | 11,48 % | **610 431** | **16,04 %** |
+| **Čtvrtek** | 258 330 | 12,48 % | 606 460 | 15,94 % |
+| **Pátek** | 327 152 | 15,81 % | 569 452 | 14,96 % |
+| **Sobota** | **438 754** | **21,20 %** | 483 142 | 12,70 % |
+| **Neděle** | 342 525 | 16,55 % | 406 399 | 10,68 % |
+
+* **Members (práce, škola):** Aktivita předplatitelů je nejvyšší v období od úterý do čtvrtka (Út–Čt tvoří téměř 48 % jejich celkového objemu). O víkendech dochází k výraznému útlumu (neděle tvoří pouze 10,68 %).
+* **Casual (odpočinek):** Poptávka jednorázových uživatelů strmě roste od pátku a vrcholí v sobotu (21,20 %). Samotný víkend (So–Ne) představuje **37,75 % veškerých jejich výpůjček**, přičemž průměrná délka víkendové jízdy dosahuje **21,5 až 22 minut** (oproti ~16 min v týdnu).
