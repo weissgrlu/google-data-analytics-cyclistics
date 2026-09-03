@@ -102,3 +102,27 @@ Analýza nejvytíženějších hodin zřejmě potvrzuje zjištění v předchoz�
   * **Odpolední špička:** 17:00 (410 084 jízd; 10,78 % objemu).
   * Časové okno mezi 16:00 a 18:00 vykazuje téměř 29 % veškerého denního provozu členů.
 * **Preference odpoledne u casual:** Rekreační zákazníci ranní dopravní špičku nemají (v 08:00 realizují pouze 3,56 % svých cest). Aktivita plynule roste od dopoledne a dosahuje vrcholu v 17:00 (195 899 jízd; 9,47 %), přičemž nejdelší průměrné jízdy (22–23 minut) probíhají v poledních hodinách (10:00–14:00).
+
+### 4. Sezónnost a vliv počasí (roční období)
+Vliv měsíců je zřejmě vidět i u rozdílného rozložení poptávky členů a casual cyklistů.
+* **Letní sezónní vrchol u casual zákazníků:** Poptávka je nejvyšší v červenci (326 215 jízd) a srpnu (308 072 jízd), které dohromady tvoří téměř 31 % jejich celoročního objemu. V lednu naopak klesá na absolutní minimum (18 647 jízd; 0,90 %), což představuje **meziroční sezónní propad o více než 94 %**.
+* **Větší odolnost členské základny (members):** Členové si udržují stabilnější bázi po celý rok pro účely každodenní dopravy. V lednu členové realizovali 132 108 jízd, což je **7× více než casual jezdci** ve stejném období. I u nich je ale logický propad v zimních měsících.
+
+### 5. Preference vybavení a geografický vliv
+Z analýzy typů kol, okružních tras a nejvytíženějších stanic vyplynuly tyto zajímavé ukazatele:
+* **Typy kol:** Obě skupiny preferují elektrokola – tvoří **70,62 %** jízd u casual a **66,42 %** u předplatitelů. Klasická kola u casual jezdců slouží pro nejdelší vyjížďky s průměrnou délkou **29,01 minuty**.
+* **Okružní jízdy:** U casual jezdců končí na stejné výchozí stanici **10,28 %** všech jízd na klasických kolech. Naproti tomu u členů končí na stejné stanici pouze **1–2 %** jízd – přes 98 % tras členů představuje přímou jednosměrnou dopravu z bodu A do bodu B.
+* **Top stanice:**
+  * **Casual (Turismus & Pobřeží):** Žebříčku dominují rekreační zóny podél jezera Michigan – *Streeter Dr & Grand Ave (Navy Pier)* (53 883 jízd), *DuSable Lake Shore Dr* a *Millennium Park* s průměrnou dobou jízdy **25–33 minut**.
+  * **Members (Doprava & Business):** Žebříček vedou terminály v těsné blízkosti vlakových nádraží a obchodního centra (The Loop) – *Canal St & Madison St* (22 703 jízd) u Ogilvie Transportation Center či *Clinton St & Jackson Blvd* u Union Station s konzistentním trváním **10–11 minut** (typické pro účelové dojíždění).
+ 
+ ### Shrnutí analýzy
+
+| Dimenze chování | Roční člen (`Member`) | Jednorázový uživatel (`Casual`) |
+| :--- | :--- | :--- |
+| **Hlavní motivace** | Každodenní dojíždění do zaměstnání / školy.| Víkendový relax, fitness, turistika. |
+| **Typická délka jízdy** | Krátká a efektivní (medián 8,7 min). | Dlouhá a vyhlídková (medián 11,5–13,5 min). |
+| **Vrchol týdne** | Úterý až čtvrtek (pracovní dny). | Pátek až neděle (víkendový nárůst). |
+| **Denní profil** | Dvě špičky (ranní špička 08:00, odpolední 17:00).| Jedna špička (plynulý odpolední nárůst k 17:00).|
+| **Sezónní chování** | Celoročně stabilní (dojíždění i v zimě). | Silně závislé na počasí (útlum v zimě). |
+| **Typické lokality** | Nádraží, přestupní uzly MHD, kancelářské zóny.| Pobřeží jezera, parky, turistické atrakce. |
