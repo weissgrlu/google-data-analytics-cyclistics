@@ -34,3 +34,5 @@ Pro tuto analýzu byla stažena a připravena historická data o jízdách fikti
 ### Výběr nástroje
 Jakožto pracovní nástroj na zpracování takto rozsáhlého datového souboru jsme zvolili SQL, konkrétně BigQuery. Takovouto volbu jsme provedli hlavně z důvodu efektivnější práce s velkým množstvím řádků, klasický tabulkový procesor by byl značně neefektivní.
 
+### Kontrola kvality dat
+
