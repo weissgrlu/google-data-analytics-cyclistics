@@ -140,3 +140,31 @@ Pro vizuální komunikaci výsledků a data storytelling byl zvolen nástroj **T
 
 **Živá interaktivní vizualizace na Tableau Public:**  
 *[(https://public.tableau.com/views/google-data-analytics-cyclistics/CyclisticExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)](https://public.tableau.com/views/google-data-analytics-cyclistics/CyclisticExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)*
+
+## 6. FÁZE: ACT
+---
+
+## 6. Fáze: ACT (Závěr a strategická doporučení)
+Hlavním cílem této případové studie bylo zodpovědět otázku, týkající se využití kol různými skupinami zákazníků: **Jak se liší vzorce chování předplatitelů (members) a příležitostných jezdců (casual), a jak tato data využít k efektivní konverzi casual uživatelů na roční členy?**
+
+Na základě analýzy 5 874 677 vyčištěných jízd a geografického i časového modelování formulujeme **Top 3 konkrétní byznysová doporučení**:
+
+### 1. Zavedení nového produktu: Víkendové a letní sezónní členství
+* **Datový podklad:** Příležitostní jezdci vykazují extrémní nárazovost poptávky – víkendy (sobota a neděle) tvoří téměř **38 % jejich celkového objemu jízd** a letní sezóna představuje vrchol jejich aktivity, zatímco v zimních měsících jejich využívání služby prakticky zamrzá. Plné členství je ale pro ně zbytečné, protože využívají kolo pouze pro rekreaci a nikoliv dojíždění do práce.
+* **Doporučení pro marketing:** Vytvořit mezistupeň v cenové politice – např. **Weekend Pass** (neomezené víkendové jízdy) nebo **Summer Membership** (květen–září). Tento produkt zachytí rekreační uživatele a umožní vznik mezistupně mezi klasickým členstvím a úplným nečlenstvím.
+
+### 2. Cílené notifikace vázané na polohu poblíž jezera Michigan
+* **Datový podklad:** Geografická analýza potvrdila, že poptávka casual jezdců je silná podél pobřeží jezera Michigan (stanice *Streeter Dr & Grand Ave*, *Navy Pier*, *Millennium Park* a *Lakefront Trail*). Navíc jejich aktivita kulminuje v pátek odpoledne a o víkendech od 13:00 do 17:00.
+* **Doporučení pro marketing:** Spouštět automatizované mobilní kampaně vázané na geolokaci a čas. Pokud si casual jezdec odemkne kolo v pátek odpoledne nebo o víkendu u pobřežních stanic, aplikace mu nabídne okamžitou promo akci na registraci členství. Zároveň tyto klíčové pobřežní uzly představují ideální lokace pro fyzickou promotion a testovací stánky během letních měsíců.
+
+### 3. Komunikační kampaň: Personalizovaná kalkulačka finanční úspory
+* **Datový podklad:** Příležitostní jezdci tráví na kole výrazně více času na jednu výpůjčku než členové (průměrná délka výpůjčky casual jezdců dosahuje téměř **19 minut**, zatímco členové jezdí efektivně kolem 12 minut). Při platbách za jednotlivé odemčení a minutové sazby casual jezdci při pravidelnějším víkendovém ježdění přeplácejí cenu ročního předplatného.
+* **Doporučení pro marketing:** Využít e-mailový marketing a transakční obrazovky v aplikaci po skončení jízdy. Prezentovat uživateli srovnání nákladů na reálném příkladu: *„Tento měsíc jste za víkendové vyjížďky utratili $X. S ročním členstvím by vás stejný počet jízd vyšel na polovinu a ušetřili byste $Y.“* Transparentní komunikace úspory prokazatelně funguje na rekreační jezdce s vyšší frekvencí výpůjček.
+
+
+## O autorovi
+* **Autor:** Lukáš Weissgráb
+* **Nástroje projektu:** Google BigQuery (SQL), Tableau Public, Git / GitHub
+* **Portfolio & Odkazy:** [LinkedIn] (www.linkedin.com/in/lukáš-weissgráb-3ba51428a)
+
+| [Tableau Public](https://public.tableau.com/](https://public.tableau.com/app/profile/lukas.weissgrab/vizzes))
