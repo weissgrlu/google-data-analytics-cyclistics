@@ -126,3 +126,17 @@ Z analýzy typů kol, okružních tras a nejvytíženějších stanic vyplynuly 
 | **Denní profil** | Dvě špičky (ranní špička 08:00, odpolední 17:00).| Jedna špička (plynulý odpolední nárůst k 17:00).|
 | **Sezónní chování** | Celoročně stabilní (dojíždění i v zimě). | Silně závislé na počasí (útlum v zimě). |
 | **Typické lokality** | Nádraží, přestupní uzly MHD, kancelářské zóny.| Pobřeží jezera, parky, turistické atrakce. |
+
+## 5. FÁZE: SHARE
+Pro vizuální komunikaci výsledků a data storytelling byl zvolen nástroj **Tableau Public**. Data použitá pro analýzu byla získána pomocí BigQuery na základě scriptů z `03_summary_for_tableau.sql`.
+
+### Klíčové vizuální výstupy
+1. **Executive Dashboard (1366 × 768 px):** Jednostránkový manažerský přehled obsahující horní souhrnné KPI karty (celkový objem jízd, tržní podíl členů vs. casual a průměrné trvání jedné jízdy) a mřížku 2x2 klíčových grafů:
+   * *Denní dopravní špičky:* Ukazuje dvě křivky členů (špičky v 8:00 a 17:00) vs.  odpolední špičku casual cyklistů.
+   * *Týdenní přehled:* Demonstruje dominanci členů od úterý do čtvrtka a silný víkendový nárůst u casual uživatelů (So–Ne tvoří téměř 38 % jejich objemu).
+   * *Sezónní křivka:* Vizualizuje celoroční stabilitu předplatitelů a 94% letní vrchol/zimní propad u jednorázových jezdců.
+   * *Struktura typů kol:* Porovnání obliby elektrokol (~66–70 %).
+2. **Geografický přehled (Mapa Chicaga):** Interaktivní bodová mapa znázorňující prostorovou koncentraci casual cyklistů podél pobřeží jezera Michigan a u turistických atrakcí (Navy Pier, Millennium Park) oproti rovnoměrnému pokrytí dopravních uzlů a rezidenčních čtvrtí členy.
+
+**Živá interaktivní vizualizace na Tableau Public:**  
+*[(https://public.tableau.com/views/google-data-analytics-cyclistics/CyclisticExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)](https://public.tableau.com/views/google-data-analytics-cyclistics/CyclisticExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)*
