@@ -103,6 +103,7 @@ FROM
 -- nyní vytvoříme novou tabulku, která bude vyčištěná o odhalená nesprávná data v předchozí části analýzy
 -- budou v ní také vytvořené nové metriky, které detailněji popíšeme níže
 CREATE OR REPLACE TABLE `alert-basis-504812-j0.cyclistic_projekt.cyclistic_cleaned` AS
+WITH cleaned_and_ranked AS (
 
 SELECT 
   ride_id,
@@ -128,7 +129,12 @@ SELECT
   start_lng,
   end_lat,
   end_lng,
-  member_casual
+  member_casual,
+  -- očíslujeme duplikáty tak, abychom je mohli na konci vyřadit a získali tak unikátní ride_id
+  ROW_NUMBER() OVER (
+      PARTITION BY ride_id 
+      ORDER BY started_at
+    ) AS row_num
 
   FROM `alert-basis-504812-j0.cyclistic_projekt.cyclistic_combined`
 
@@ -143,9 +149,16 @@ SELECT
     AND start_station_name = end_station_name)
     --odstranění testovacích stanic
     AND (start_station_name NOT LIKE '%TEST%' OR start_station_name IS NULL)
-    AND (end_station_name NOT LIKE '%TEST%' OR end_station_name IS NULL);
+    AND (end_station_name NOT LIKE '%TEST%' OR end_station_name IS NULL))
+--vybereme pouze unikátní řádky, zbavíme se tak duplicit
+SELECT 
+  * EXCEPT(row_num)
+FROM 
+  cleaned_and_ranked
+WHERE 
+  row_num = 1;
 
--- po vyčištění původní tabulky nám zůstalo celkem 5 874 686 řádků
+-- po vyčištění původní tabulky nám zůstalo celkem 5 874 658 řádků
 
 -- poslední rychlá kontrola, že nová tabulka má všechny vlastnosti, které od ní požadujeme
 SELECT 
@@ -156,4 +169,12 @@ SELECT
 FROM 
   `alert-basis-504812-j0.cyclistic_projekt.cyclistic_cleaned`;
 
--- žádné chyby, s touto tabulkou tedy budeme pracovat
+SELECT 
+  COUNT(*) AS duplicate_count
+FROM (
+  SELECT ride_id
+  FROM `alert-basis-504812-j0.cyclistic_projekt.cyclistic_cleaned`
+  GROUP BY ride_id
+  HAVING COUNT(*) > 1);
+
+-- žádné chyby ani duplicity, s touto tabulkou tedy budeme pracovat
