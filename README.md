@@ -165,4 +165,4 @@ Na základě analýzy 5 874 677 vyčištěných jízd a geografického i časov�
 ## O autorovi
 * **Autor:** Lukáš Weissgráb
 * **Nástroje projektu:** Google BigQuery (SQL), Tableau Public, Git / GitHub
-* **Portfolio & Odkazy:** [LinkedIn](www.linkedin.com/in/lukáš-weissgráb-3ba51428a) | [Tableau Public](https://public.tableau.com/app/profile/lukas.weissgrab/vizzes))
+* **Portfolio & Odkazy:** [LinkedIn](www.linkedin.com/in/lukáš-weissgráb-3ba51428a) | [Tableau Public](https://public.tableau.com/app/profile/lukas.weissgrab/vizzes)
