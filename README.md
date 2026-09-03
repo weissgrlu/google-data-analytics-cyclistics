@@ -94,3 +94,11 @@ Statistika, kterou jsme provedli, odhalila zřejmě zásadně odlišnou motivaci
 
 * **Members (práce, škola):** Aktivita předplatitelů je nejvyšší v období od úterý do čtvrtka (Út–Čt tvoří téměř 48 % jejich celkového objemu). O víkendech dochází k výraznému útlumu (neděle tvoří pouze 10,68 %).
 * **Casual (odpočinek):** Poptávka jednorázových uživatelů strmě roste od pátku a vrcholí v sobotu (21,20 %). Samotný víkend (So–Ne) představuje **37,75 % veškerých jejich výpůjček**, přičemž průměrná délka víkendové jízdy dosahuje **21,5 až 22 minut** (oproti ~16 min v týdnu).
+
+### 3. Denní dopravní špičky (vliv denní doby)
+Analýza nejvytíženějších hodin zřejmě potvrzuje zjištění v předchozí části, tj. různou motivaci pro využití.
+* **Dvě špičky u members:** Členská základna vykazuje dva výrazné špičkové časy odpovídající začátku a konci pracovní doby:
+  * **Ranní špička:** 08:00 (277 896 jízd; 7,30 % objemu).
+  * **Odpolední špička:** 17:00 (410 084 jízd; 10,78 % objemu).
+  * Časové okno mezi 16:00 a 18:00 vykazuje téměř 29 % veškerého denního provozu členů.
+* **Preference odpoledne u casual:** Rekreační zákazníci ranní dopravní špičku nemají (v 08:00 realizují pouze 3,56 % svých cest). Aktivita plynule roste od dopoledne a dosahuje vrcholu v 17:00 (195 899 jízd; 9,47 %), přičemž nejdelší průměrné jízdy (22–23 minut) probíhají v poledních hodinách (10:00–14:00).
